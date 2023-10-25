@@ -36,7 +36,7 @@ export default function Navbar({ fixed }) {
 									className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75'
 									href='/aboutme'
 								>
-									<i className='fab fa-eye text-lg leading-lg text-white opacity-75'></i>
+									<i className='fas fa-eye text-lg leading-lg text-white opacity-75'></i>
 									<span className='ml-2'>
 										About Me
 									</span>
@@ -47,7 +47,7 @@ export default function Navbar({ fixed }) {
 									to='/projects'
 									className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75'
 								>
-									<i className='fab fa-hand text-lg leading-lg text-white opacity-75'></i>
+									<i className='fas fa-brain text-lg leading-lg text-white opacity-75'></i>
 									<span className='ml-2'>
 										Projects
 									</span>
@@ -58,7 +58,7 @@ export default function Navbar({ fixed }) {
 									to='/contact'
 									className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75'
 								>
-									<i className='fab fa-brain text-lg leading-lg text-white opacity-75'></i>
+									<i className='fas fa-hand text-lg leading-lg text-white opacity-75'></i>
 									<span className='ml-2'>
 										Contact Me
 									</span>

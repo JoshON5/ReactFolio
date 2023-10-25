@@ -1,62 +1,15 @@
-import { useState } from "react";
+import Avatar from '../assets/avatar.jpeg';
+export default function Header() {
+	return (
+		<div>
+      <div className="px-3 py-3">
+      <img
+				class='w-10 h-10 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500'
+				src={Avatar}
+				alt='Bordered avatar'
+			/>
+      </div>
 
-export default function Navbar({ fixed }) {
-  const [navbarOpen, setNavbarOpen] = useState(false);
-  return (
-    <>
-      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-emerald-500 mb-3">
-        <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
-          <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-            <a
-              className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
-              href="#pablo"
-            >
-              Joshua Nichols Portfolio
-            </a>
-            <button
-              className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
-              type="button"
-              onClick={() => setNavbarOpen(!navbarOpen)}
-            >
-              <i className="fas fa-bars"></i>
-            </button>
-          </div>
-          <div
-            className={
-              "lg:flex flex-grow items-center" +
-              (navbarOpen ? " flex" : " hidden")
-            }
-            id="example-navbar-danger"
-          >
-            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
-              <li className="nav-item">
-                <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="/aboutme"
-                >
-                <i className="fab fa-eye text-lg leading-lg text-white opacity-75"></i><span className="ml-2">About Me</span>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="/projects"
-                >
-                  <i className="fab fa-hand text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Projects</span>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="/contact"
-                >
-                  <i className="fab fa-brain text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Contact Me</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </>
-  );
+		</div>
+	);
 }
