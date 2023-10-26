@@ -5,7 +5,18 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'rubik': ['Rubik', 'system-ui']
+      },
+      colors: {
+        'raspberry': '#B4436C',
+        'saffron': '#F2C14E',
+        'mantis': '#5FAD56',
+        'coral': '#F78154',
+        'viridian': '#4D9078'
+      }
+    },
   },
   plugins: [],
 }

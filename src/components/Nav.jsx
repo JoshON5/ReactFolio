@@ -5,12 +5,12 @@ export default function Navbar({ fixed }) {
 	const [navbarOpen, setNavbarOpen] = useState(false)
 	return (
 		<>
-			<nav className='relative flex flex-wrap items-center justify-between px-2 py-3 bg-emerald-500 mb-3'>
+			<nav className='relative flex flex-wrap items-center justify-between px-2 py-3 bg-viridian mb-3'>
 				<div className='container px-4 mx-auto flex flex-wrap items-center justify-between'>
 					<div className='w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start'>
 						<Link
 							to='/'
-							className='text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white'
+							className='text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white hover:text-saffron'
 						>
 							Joshua Nichols Portfolio
 						</Link>
@@ -33,7 +33,7 @@ export default function Navbar({ fixed }) {
 							<li className='nav-item'>
 								<Link 
 									to='/about'
-									className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75'
+									className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:text-saffron hover:opacity-75'
 									href='/aboutme'
 								>
 									<i className='fas fa-eye text-lg leading-lg text-white opacity-75'></i>
@@ -45,7 +45,7 @@ export default function Navbar({ fixed }) {
 							<li className='nav-item'>
 								<Link
 									to='/projects'
-									className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75'
+									className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:text-saffron hover:opacity-75'
 								>
 									<i className='fas fa-brain text-lg leading-lg text-white opacity-75'></i>
 									<span className='ml-2'>
@@ -56,7 +56,7 @@ export default function Navbar({ fixed }) {
 							<li className='nav-item'>
 								<Link
 									to='/contact'
-									className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75'
+									className='px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:text-saffron hover:opacity-75'
 								>
 									<i className='fas fa-hand text-lg leading-lg text-white opacity-75'></i>
 									<span className='ml-2'>
